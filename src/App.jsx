@@ -1,9 +1,13 @@
 import React from "react";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+
 
 const App = () => {
   return (
-    <div>
-      <h1 className="font-lacquer text-3xl font-bold underline">Hello world!</h1>
+    <div className="flex-col justify-center">
+      <Navbar />
+      <Hero />
     </div>
   );
 };

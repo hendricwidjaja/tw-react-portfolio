@@ -7,7 +7,6 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        inter: ['Inter', 'sans-serif'],
         lacquer: ['Lacquer', 'sans-serif']
       },
     },

@@ -24,8 +24,8 @@ export const Navlinks = [
 const Navbar = () => {
   return (
     <div className="fixed z-10 w-full flex items-center justify-between p-6">
-      <div className="hover:scale-125 hover:rotate-6 hover:translate-x-2 hover:drop-shadow-2xl duration-100">
-        <a href="/#home" className="font-lacquer cursor-pointer mr-8 text-5xl">
+      <div className="hover:scale-125 hover:rotate-6 hover:translate-x-2 duration-100">
+        <a href="/#home" className="font-lacquer cursor-pointer mr-8 text-5xl hover:drop-shadow-custom-hov">
           :)
         </a>
       </div>
@@ -36,7 +36,7 @@ const Navbar = () => {
               <li key={id} className="py-4">
                 <a
                   href={link}
-                  className="font-lacquer inline-block text-lg hover:scale-110 duration-100"
+                  className="font-lacquer inline-block text-lg hover:drop-shadow-custom-hov hover:scale-110 duration-150"
                 >
                   {name}
                 </a>

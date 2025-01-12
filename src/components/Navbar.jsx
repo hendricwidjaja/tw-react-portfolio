@@ -28,7 +28,7 @@ const Navbar = () => {
         <nav className="flex items-center justify-between max-w-screen-xl mx-auto px-6 py-4">
           <a
             href="/#home"
-            className="font-lacquer cursor-pointer mr-8 text-5xl hover:drop-shadow-custom-hov hover:scale-125 hover:rotate-6 hover:translate-x-2 duration-100"
+            className="font-lacquer cursor-pointer mr-8 text-5xl hover:drop-shadow-custom-hov hover:scale-125 hover:rotate-6 duration-100"
           >
             :)
           </a>

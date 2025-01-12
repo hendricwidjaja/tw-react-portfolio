@@ -5,9 +5,9 @@ import { REVIEWS } from "../constants";
 
 const Testimonials = () => {
   return (
-    <div className="flex-col place-items-center justify-center pt-10">
+    <div className="flex-col place-items-center justify-center pt-6">
       <section className="flex place-items-center gap-3">
-        <h2 className="font-lacquer font-bold text-3xl">Testimonials</h2>
+        <h2 className="font-lacquer font-bold text-4xl">Testimonials</h2>
         <img className="size-11" src={user} alt="user-icon"></img>
       </section>
       <section className="grid auto-rows-auto max-w-5xl w-10/12 pt-6 gap-4">

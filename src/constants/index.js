@@ -86,27 +86,27 @@ export const REVIEWS = [
     title: "CEO of John Doe Pty Ltd",
     picture: reviewer1,
     highlight: '"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, nulla"',
-    review: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, nulla! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, exercitationem dolorum? Illum, doloribus. Illo nam atque praesentium error nemo aliquam."
+    review: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, nulla! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, exercitationem dolorum? Illum, doloribus. Illo nam atque praesentium error nemo aliquam. Doloribus, exercitationem dolorum? Illum, doloribus. Illo nam atque praesentium error nemo aliquam Doloribus, exercitationem dolorum? Illum, doloribus. Illo nam atque praesentium error nemo aliquam."
   },
   {
     name: "Brianna Ford",
     title: "CEO of BF Company",
     picture: reviewer2,
     highlight: '"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, nulla"',
-    review: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, nulla! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, exercitationem dolorum? Illum, doloribus. Illo nam atque praesentium error nemo aliquam."
+    review: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, nulla! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus."
   },
   {
     name: "Terrance Williams",
     title: "Director of Williams Pty Ltd",
     picture: reviewer3,
     highlight: '"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, nulla"',
-    review: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, nulla! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, exercitationem dolorum? Illum, doloribus. Illo nam atque praesentium error nemo aliquam."
+    review: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, nulla! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus."
   },
   {
     name: "Joanna Chen",
     title: "Lead Software Engineer at JC & Co",
     picture: reviewer4,
     highlight: '"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, nulla"',
-    review: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, nulla! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, exercitationem dolorum? Illum, doloribus. Illo nam atque praesentium error nemo aliquam."
+    review: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, nulla! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, exercitationem dolorum? Illum, doloribus. Illo nam atque praesentium error nemo aliquam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, nulla! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus"
   },
 ]

@@ -8,6 +8,29 @@ import reviewer2 from "../assets/testimonials/reviewer2.jpg";
 import reviewer3 from "../assets/testimonials/reviewer3.jpg";
 import reviewer4 from "../assets/testimonials/reviewer4.jpg";
 
+export const Navlinks = [
+  {
+    id: 1,
+    name: "home",
+    link: "/#home",
+  },
+  {
+    id: 2,
+    name: "about",
+    link: "/#about",
+  },
+  {
+    id: 3,
+    name: "projects",
+    link: "/#projects",
+  },
+  {
+    id: 4,
+    name: "contact",
+    link: "/#contact",
+  },
+];
+
 export const HERO_CONTENT = `I consider myself an aspiring full stack web developer. Previously a cost planner/contract administrator in the construction industry. I design, manage and deliver projects with every pixel in mind. This is a glance at my software development journey so far. If you're interested in working together, have some feedback (or just wanted to say hello) please feel free to reach out, follow me on my socials or get in touch via the links below.`;
 
 export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;

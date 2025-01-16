@@ -19,14 +19,14 @@ import vscode from "../assets/tech-stack/visual-studio-code-icon.webp";
 
 const TechStack = () => {
   return (
-    <div className="flex flex-col sm:flex-row sm:gap-10 place-items-center gap-6">
+    <div className="flex flex-col md:flex-row md:gap-10 w-10/12 justify-center place-items-center gap-6">
       <div id="techstackheading">
         <h1 className="pt-12 font-lacquer font-bold text-9xl">tech</h1>
         <div className="flex place-items-center gap-3">
           <h1 className="font-lacquer font-bold text-7xl">stack</h1>
           <img className="size-20" src={briefcase} alt="Briefcase Icon"></img>
         </div>
-        <div className="flex gap-2 place-items-center font-bold mt-2">
+        <div className="flex gap-2 place-items-center font-bold text-sm mt-2">
           <h3>Some of the</h3>
           <span>
             <FaScrewdriverWrench />
@@ -34,7 +34,7 @@ const TechStack = () => {
           <h3>I use on a weekly basis</h3>
         </div>
       </div>
-      <section id="tech-stack-grid" className="flex-col sm:pt-16">
+      <section id="tech-stack-grid" className="md:pt-16 w-11/12 md:max-w-fit">
         <div
           id="tech-stack-icons"
           className="flex gap-8 justify-center bg-white border-black border-2 rounded-2xl mb-4 py-2 px-4 drop-shadow-custom"

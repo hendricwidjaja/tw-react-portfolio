@@ -1,39 +1,23 @@
-export const Navlinks = [
-  {
-    id: 1,
-    name: "home",
-    link: "/#home",
-  },
-  {
-    id: 2,
-    name: "about",
-    link: "/#about",
-  },
-  {
-    id: 3,
-    name: "projects",
-    link: "/#projects",
-  },
-  {
-    id: 4,
-    name: "contact",
-    link: "/#contact",
-  },
-];
+import React from "react";
+import { Navlinks } from "../constants";
+import { TiThMenu } from "react-icons/ti";
 
 const Navbar = () => {
   return (
     <div className="fixed z-10 w-full">
       <div className="bg-opacity-45 bg-white backdrop-blur-md border-b-4">
         <nav className="flex items-center justify-between max-w-screen-xl mx-auto px-6 py-4">
+          {/* Logo */}
           <a
             href="/#home"
             className="font-lacquer cursor-pointer mr-8 text-5xl hover:drop-shadow-custom-hov hover:scale-125 hover:rotate-6 duration-100"
           >
             :)
           </a>
-          <h1 className="text-red-600 text-4xl font-lacquer">...Work In Progress 😎⚠️</h1>
-          <ul className="flex items-center gap-8">
+          {/* WIP Notification */}
+          <h1 className="text-red-600 text-4xl font-lacquer">⚠️ WIP ⚠️</h1>
+          {/* Menu sections */}
+          <ul className="flex items-center gap-8 hidden sm:inline-flex">
             {Navlinks.map(({ id, name, link }) => {
               return (
                 <li key={id} className="py-4">
@@ -47,6 +31,10 @@ const Navbar = () => {
               );
             })}
           </ul>
+          {/* Mobile Hamburer Section */}
+          <div className="sm:hidden">
+            <TiThMenu className="text-4xl" />
+          </div>
         </nav>
       </div>
     </div>

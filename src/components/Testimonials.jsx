@@ -2,6 +2,7 @@ import React from "react";
 import user from "../assets/heading-icons/user-check-solid.svg";
 import quotes from "../assets/testimonials/quote-left-solid.svg";
 import { REVIEWS } from "../constants";
+import { motion } from "framer-motion";
 
 const Testimonials = () => {
   return (
@@ -19,7 +20,6 @@ const Testimonials = () => {
                 border-black 
                 border-2
                 rounded-2xl
-                hover:scale-105 
                 duration-200
                 drop-shadow-custom
                 ${

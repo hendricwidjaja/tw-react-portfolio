@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Testimonials from "./components/Testimonials";
 import './index.css'
+import TechStack from "./components/TechStack";
 
 
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
       <Navbar />
       <Hero />
       <Testimonials />
+      <TechStack />
     </div>
   );
 };

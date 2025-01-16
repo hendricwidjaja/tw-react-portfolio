@@ -32,6 +32,7 @@ const Navbar = () => {
           >
             :)
           </a>
+          <h1 className="text-red-600 text-4xl font-lacquer">...Work In Progress 😎⚠️</h1>
           <ul className="flex items-center gap-8">
             {Navlinks.map(({ id, name, link }) => {
               return (

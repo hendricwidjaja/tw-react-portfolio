@@ -19,7 +19,7 @@ import vscode from "../assets/tech-stack/visual-studio-code-icon.webp";
 
 const TechStack = () => {
   return (
-    <div className="flex place-items-center gap-10">
+    <div className="flex flex-col sm:flex-row sm:gap-10 place-items-center gap-6">
       <div id="techstackheading">
         <h1 className="pt-12 font-lacquer font-bold text-9xl">tech</h1>
         <div className="flex place-items-center gap-3">
@@ -34,7 +34,7 @@ const TechStack = () => {
           <h3>I use on a weekly basis</h3>
         </div>
       </div>
-      <section id="tech-stack-grid" className="flex-col pt-16">
+      <section id="tech-stack-grid" className="flex-col sm:pt-16">
         <div
           id="tech-stack-icons"
           className="flex gap-8 justify-center bg-white border-black border-2 rounded-2xl mb-4 py-2 px-4 drop-shadow-custom"
@@ -69,7 +69,6 @@ const TechStack = () => {
             <img src={netlify} alt="netlify" className="h-10 hover:scale-110 hover:-translate-y-1 duration-300"></img>
             <img src={vscode} alt="vscode" className="h-10 hover:scale-110 hover:-translate-y-1 duration-300"></img>
         </div>
-
       </section>
     </div>
   );

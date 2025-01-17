@@ -15,7 +15,7 @@ const Navbar = () => {
             :)
           </a>
           {/* WIP Notification */}
-          <h1 className="text-red-600 text-4xl font-lacquer">⚠️ WIP ⚠️</h1>
+          <h1 className="text-red-600 text-3xl font-lacquer">⚠️ WIP ⚠️</h1>
           {/* Menu sections */}
           <ul className="flex items-center gap-8 hidden sm:inline-flex">
             {Navlinks.map(({ id, name, link }) => {

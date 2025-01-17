@@ -20,7 +20,7 @@ const container = (delay) => ({
 const Hero = () => {
   return (
     <div className="flex-col justify-center place-items-center pt-36">
-      <div className="size-60 sm:size-52 drop-shadow-custom hover:drop-shadow-custom-hov hover:scale-110 duration-300">
+      <div className="justify-center size-60 sm:size-52 drop-shadow-custom hover:drop-shadow-custom-hov hover:scale-110 duration-300">
         <motion.img
           initial={{ y: -100, opacity: 0, scale: 0.5 }}
           animate={{ y: 0, opacity: 1, scale: 1 }}

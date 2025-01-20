@@ -6,6 +6,10 @@ const Navbar = () => {
   return (
     <div className="fixed z-10 w-full">
       <div className="bg-opacity-45 bg-white backdrop-blur-md border-b-4">
+        {/* WIP Notification */}
+        <div className="bg-red-600 text-center text-white py-2">
+            <h2>🛠️ This website is under construction 👷</h2>
+        </div>
         <nav className="flex items-center justify-between max-w-screen-xl mx-auto px-6 py-4">
           {/* Logo */}
           <a
@@ -14,8 +18,6 @@ const Navbar = () => {
           >
             :)
           </a>
-          {/* WIP Notification */}
-          <h1 className="text-red-600 text-3xl font-lacquer">⚠️ WIP ⚠️</h1>
           {/* Menu sections */}
           <ul className="flex items-center gap-8 hidden sm:inline-flex">
             {Navlinks.map(({ id, name, link }) => {

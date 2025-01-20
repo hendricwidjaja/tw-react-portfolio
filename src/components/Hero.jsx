@@ -9,36 +9,59 @@ import { TbBrandGithubFilled } from "react-icons/tb";
 import { MdEmail } from "react-icons/md";
 
 const container = (delay) => ({
-  hidden: { y: -100, opacity: 0 },
-  visible: {
-    y: 0,
-    opacity: 1,
-    transition: { duration: 1, delay: delay },
+  bounce: {
+    y: [0, -75, 0],
+    transition: { duration: 0.4, ease: "easeInOut", delay: delay },
   },
 });
 
 const Hero = () => {
   return (
-    <div className="pt-36">
-      <div className="flex justify-center drop-shadow-custom hover:drop-shadow-custom-hov hover:scale-110 duration-300">
+    <div className="sm:pt-44 pt-28">
+      <div className="flex justify-center">
         <motion.img
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0 }}
-          className="rounded-full border-[5px] border-black size-60 sm:size-52"
+          variants={container(0.4)}
+          animate="bounce"
+          className="sm:rounded-full sm:border-[5px] drop-shadow-custom hover:drop-shadow-custom-hov duration-300 ease-in-out border-black sm:size-52 size-0"
           src={profile}
           alt="Hendric Widjaja Profile Pic"
         />
       </div>
-      <div className="justify-center font-lacquer font-bold text-center sm:flex gap-6 text-7xl sm:text-6xl pt-12">
-        <motion.h1 className="hover:-translate-y-3 hover:scale-110 duration-300">
+      <div className="justify-center font-lacquer font-bold text-center flex flex-wrap gap-6 text-7xl mx-12 pt-12">
+        <motion.h1
+          variants={container(0)}
+          animate="bounce"
+          className="hover:-translate-y-3 hover:scale-110 duration-300"
+        >
           hi,
         </motion.h1>
-        <motion.h1 className="hover:-translate-y-3 hover:scale-110 duration-300">
-          my name
+        <motion.h1
+          variants={container(0.15)}
+          animate="bounce"
+          className="hover:-translate-y-3 hover:scale-110 duration-300"
+        >
+          my
         </motion.h1>
-        <motion.h1 className="hover:-translate-y-3 hover:scale-110 duration-300">
-          is hendric
+        <motion.h1
+          variants={container(0.3)}
+          animate="bounce"
+          className="hover:-translate-y-3 hover:scale-110 duration-300"
+        >
+          name
+        </motion.h1>
+        <motion.h1
+          variants={container(0.45)}
+          animate="bounce"
+          className="hover:-translate-y-3 hover:scale-110 duration-300"
+        >
+          is
+        </motion.h1>
+        <motion.h1
+          variants={container(0.6)}
+          animate="bounce"
+          className="hover:-translate-y-3 hover:scale-110 duration-300"
+        >
+          hendric
         </motion.h1>
       </div>
       <article className="flex justify-center">
@@ -60,7 +83,7 @@ const Hero = () => {
         alt="Download my CV"
         className="flex justify-center"
       >
-        <button className="h-12 sm:w-80 hover:text-lg bg-black text-white font-semibold rounded-2xl drop-shadow-custom duration-200 hover:drop-shadow-custom-hov mt-6 px-8">
+        <button className="h-12 sm:w-80 border-2 border-black hover:bg-gradient-to-r hover:from-firstBlue hover:via-lastBlue hover:to-evenBlue bg-black text-white font-semibold rounded-2xl drop-shadow-custom duration-200 hover:drop-shadow-custom-hov mt-6 px-8">
           Download CV
         </button>
       </a>
@@ -71,7 +94,7 @@ const Hero = () => {
           rel="noopener noreferrer"
           aria-label="Click to open a new tab to Hendric Widjaja's Linkedin"
         >
-          <FaLinkedinIn className="border-4 border-black rounded-full p-2 drop-shadow-custom hover:drop-shadow-custom-hov hover:scale-105 duration-200" />
+          <FaLinkedinIn className="bg-white hover:bg-evenBlue border-4 border-black rounded-full p-2 drop-shadow-custom hover:drop-shadow-custom-hov hover:scale-105 duration-200" />
         </a>
         <a
           href="https://github.com/hendricwidjaja"
@@ -79,7 +102,7 @@ const Hero = () => {
           rel="noopener noreferrer"
           aria-label="Click to open a new tab to Hendric Widjaja's GitHub"
         >
-          <TbBrandGithubFilled className="border-4 border-black rounded-full p-2 drop-shadow-custom hover:drop-shadow-custom-hov hover:scale-105 duration-200" />
+          <TbBrandGithubFilled className="bg-white hover:bg-oddYellow border-4 border-black rounded-full p-2 drop-shadow-custom hover:drop-shadow-custom-hov hover:scale-105 duration-200" />
         </a>
         <a
           href="mailto:hcwidjaja@gmail.com"
@@ -87,7 +110,7 @@ const Hero = () => {
           rel="noopener noreferrer"
           aria-label="Click to compose a new email to Hendric Widjaja"
         >
-          <MdEmail className="border-4 border-black rounded-full p-2 drop-shadow-custom hover:drop-shadow-custom-hov hover:scale-105 duration-200" />
+          <MdEmail className="bg-white hover:bg-evenBlue border-4 border-black rounded-full p-2 drop-shadow-custom hover:drop-shadow-custom-hov hover:scale-105 duration-200" />
         </a>
       </div>
     </div>

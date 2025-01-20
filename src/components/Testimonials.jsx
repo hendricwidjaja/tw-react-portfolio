@@ -12,7 +12,7 @@ const Testimonials = () => {
         <img className="size-11" src={user} alt="user-icon"></img>
       </section>
       <div className="flex justify-center">
-        <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-w-5xl w-10/12 pt-6 gap-6">
+        <section className="grid grid-cols-1 md:grid-cols-3 max-w-5xl w-10/12 pt-6 gap-6">
           {REVIEWS.map((review, index) => (
             <article
               key={index}
@@ -61,7 +61,7 @@ const Testimonials = () => {
                 {/* Conditionally render and rotate the quote image for the last article */}
                 {(index === 0 || index === REVIEWS.length - 1) && (
                   <img
-                    className={`size-16 ${
+                    className={`sm:size-16 size-0 ${
                       index === REVIEWS.length - 1 ? "rotate-180" : ""
                     }`}
                     src={quotes}

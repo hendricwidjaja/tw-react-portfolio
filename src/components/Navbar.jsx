@@ -1,8 +1,10 @@
 import React from "react";
 import { Navlinks } from "../constants";
 import { TiThMenu } from "react-icons/ti";
+import ResponsiveMenu from "./ResponsiveMenu";
 
 const Navbar = () => {
+    const [open, setOpen] = React.useState(false);
   return (
     <div className="fixed z-10 w-full">
       <div className="bg-opacity-45 bg-white backdrop-blur-md border-b-4">
@@ -25,7 +27,7 @@ const Navbar = () => {
                 <li key={id} className="py-4">
                   <a
                     href={link}
-                    className="font-lacquer inline-block text-lg hover:drop-shadow-custom-hov hover:scale-110 duration-150"
+                    className="font-lacquer inline-block text-lg hover:scale-110 duration-150"
                   >
                     {name}
                   </a>
@@ -34,10 +36,12 @@ const Navbar = () => {
             })}
           </ul>
           {/* Mobile Hamburer Section */}
-          <div className="sm:hidden">
+          <div className="sm:hidden" onClick={() => setOpen(!open)}>
             <TiThMenu className="text-4xl" />
           </div>
         </nav>
+        {/* Mobile Sidebar Section */}
+        <ResponsiveMenu open={open} setOpen={setOpen}/>
       </div>
     </div>
   );

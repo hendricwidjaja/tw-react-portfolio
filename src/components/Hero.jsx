@@ -10,19 +10,19 @@ import { MdEmail } from "react-icons/md";
 
 const container = (delay) => ({
   bounce: {
-    y: [0, -75, 0],
-    transition: { duration: 0.4, ease: "easeInOut", delay: delay },
+    y: [0, -25, 0],
+    transition: { duration: 0.7, ease: "easeInOut", delay: delay },
   },
 });
 
 const Hero = () => {
   return (
-    <div className="sm:pt-44 pt-28">
+    <div className="sm:pt-44 pt-28 flex flex-col items-center">
       <div className="flex justify-center">
         <motion.img
           variants={container(0.4)}
           animate="bounce"
-          className="sm:rounded-full sm:border-[5px] drop-shadow-custom hover:drop-shadow-custom-hov duration-300 ease-in-out border-black sm:size-52 size-0"
+          className="sm:rounded-full sm:border-[5px] ease-in-out border-black sm:size-52 size-0"
           src={profile}
           alt="Hendric Widjaja Profile Pic"
         />
@@ -31,35 +31,30 @@ const Hero = () => {
         <motion.h1
           variants={container(0)}
           animate="bounce"
-          className="hover:-translate-y-3 hover:scale-110 duration-300"
         >
           hi,
         </motion.h1>
         <motion.h1
           variants={container(0.15)}
           animate="bounce"
-          className="hover:-translate-y-3 hover:scale-110 duration-300"
         >
           my
         </motion.h1>
         <motion.h1
           variants={container(0.3)}
           animate="bounce"
-          className="hover:-translate-y-3 hover:scale-110 duration-300"
         >
           name
         </motion.h1>
         <motion.h1
           variants={container(0.45)}
           animate="bounce"
-          className="hover:-translate-y-3 hover:scale-110 duration-300"
         >
           is
         </motion.h1>
         <motion.h1
           variants={container(0.6)}
           animate="bounce"
-          className="hover:-translate-y-3 hover:scale-110 duration-300"
         >
           hendric
         </motion.h1>
@@ -81,7 +76,7 @@ const Hero = () => {
         href={cv}
         target="_blank"
         alt="Download my CV"
-        className="flex justify-center"
+        className=""
       >
         <button className="h-12 sm:w-80 border-2 border-black hover:bg-gradient-to-r hover:from-firstBlue hover:via-lastBlue hover:to-evenBlue bg-black text-white font-semibold rounded-2xl drop-shadow-custom duration-200 hover:drop-shadow-custom-hov mt-6 px-8">
           Download CV

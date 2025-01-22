@@ -6,15 +6,23 @@ import { motion } from "framer-motion";
 
 const Testimonials = () => {
   return (
-    <div className="flex-col justify-center pt-6">
-      <section className="flex justify-center gap-3">
+    <div className="flex-col justify-center pt-6 pb-16 border-b">
+      <motion.section
+        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: -100 }}
+        transition={{ duration: 0.7 }}
+        className="flex justify-center gap-3"
+      >
         <h2 className="font-lacquer font-bold text-4xl">Testimonials</h2>
         <img className="size-11" src={user} alt="user-icon"></img>
-      </section>
+      </motion.section>
       <div className="flex justify-center">
-        <section className="grid grid-cols-1 md:grid-cols-3 max-w-5xl w-10/12 pt-6 gap-6">
+        <section className="grid grid-cols-1 lg:grid-cols-3 max-w-5xl w-10/12 pt-6 gap-6">
           {REVIEWS.map((review, index) => (
-            <article
+            <motion.article
+              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: -25 }}
+              transition={{ duration: 0.8 }}
               key={index}
               className={`
                 p-6 
@@ -38,7 +46,7 @@ const Testimonials = () => {
                 last-of-type:hover:drop-shadow-lastBlue
                 ${
                   index === 0 || index === REVIEWS.length - 1
-                    ? "md:col-span-2"
+                    ? "lg:col-span-2"
                     : ""
                 }
             `}
@@ -71,7 +79,7 @@ const Testimonials = () => {
               </div>
               <h3 className="font-bold mb-4">{review.highlight}</h3>
               <p>{review.review}</p>
-            </article>
+            </motion.article>
           ))}
         </section>
       </div>

@@ -4,6 +4,8 @@ import Hero from "./components/Hero";
 import Testimonials from "./components/Testimonials";
 import "./index.css";
 import TechStack from "./components/TechStack";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -16,6 +18,8 @@ const App = () => {
         <Hero />
         <Testimonials />
         <TechStack />
+        <Contact />
+        <Footer />
       </div>
     </div>
   );

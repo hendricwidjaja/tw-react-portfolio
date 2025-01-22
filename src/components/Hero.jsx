@@ -17,7 +17,7 @@ const container = (delay) => ({
 
 const Hero = () => {
   return (
-    <div className="sm:pt-44 pt-28 flex flex-col items-center">
+    <div className="sm:pt-44 pt-28 flex flex-col items-center pb-4 border-b border-slate-200">
       <div className="flex justify-center">
         <motion.img
           variants={container(0.4)}
@@ -59,26 +59,30 @@ const Hero = () => {
           hendric
         </motion.h1>
       </div>
-      <article className="flex justify-center">
-        <p className="pt-12 text-center w-10/12 sm:max-w-4xl">
-          I consider myself an aspiring{" "}
-          <strong>full stack web developer</strong>. Previously a cost
-          planner/contract administrator in the construction industry. I{" "}
-          <strong>design</strong>, <strong>manage</strong> and{" "}
-          <strong>deliver</strong> projects with <strong>every pixel</strong> in
-          mind. This is a glance at my software development journey so far. If
-          you're interested in working together, have some feedback (or just
-          wanted to say hello) please feel free to reach out, follow me on my
-          socials or get in touch via the links below.
-        </p>
-      </article>
+      <motion.article 
+        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: -100 }}
+        transition={{ duration: 0.5 }}
+        className="flex justify-center">
+            <p className="pt-12 text-center w-10/12 sm:max-w-4xl">
+            I consider myself an aspiring{" "}
+            <strong>full stack web developer</strong>. Previously a cost
+            planner/contract administrator in the construction industry. I{" "}
+            <strong>design</strong>, <strong>manage</strong> and{" "}
+            <strong>deliver</strong> projects with <strong>every pixel</strong> in
+            mind. This is a glance at my software development journey so far. If
+            you're interested in working together, have some feedback (or just
+            wanted to say hello) please feel free to reach out, follow me on my
+            socials or get in touch via the links below.
+            </p>
+      </motion.article>
       <a
         href={cv}
         target="_blank"
         alt="Download my CV"
         className=""
       >
-        <button className="h-12 sm:w-80 border-2 border-black hover:bg-gradient-to-r hover:from-firstBlue hover:via-lastBlue hover:to-evenBlue bg-black text-white font-semibold rounded-2xl drop-shadow-custom duration-200 hover:drop-shadow-custom-hov mt-6 px-8">
+        <button className="h-12 sm:w-80 border-2 border-black hover:bg-gradient-to-r hover:from-firstBlue hover:via-lastBlue hover:to-evenBlue bg-black text-white font-semibold rounded-2xl drop-shadow-custom duration-200 mt-6 px-8">
           Download CV
         </button>
       </a>

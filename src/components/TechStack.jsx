@@ -50,7 +50,7 @@ const TechStack = () => {
           <h3>I use on a weekly basis</h3>
         </div>
       </motion.div>
-      <section id="tech-stack-grid" className="flex-col md:pt-16 px-8">
+      <section id="tech-stack-grid" className="flex-col md:pt-16 w-[90dvw] max-w-lg">
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
@@ -61,22 +61,22 @@ const TechStack = () => {
           <img
             src={html}
             alt="html"
-            className="h-10 hover:scale-110 hover:-translate-y-1 duration-300"
+            className="h-12 hover:scale-110 hover:-translate-y-1 duration-300"
           ></img>
           <img
             src={css}
             alt="css"
-            className="h-10 hover:scale-110 hover:-translate-y-1 duration-300"
+            className="h-12 hover:scale-110 hover:-translate-y-1 duration-300"
           ></img>
           <img
             src={js}
             alt="js"
-            className="h-10 hover:scale-110 hover:-translate-y-1 duration-300"
+            className="h-12 hover:scale-110 hover:-translate-y-1 duration-300"
           ></img>
           <img
             src={react}
             alt="react"
-            className="h-10 hover:scale-110 hover:-translate-y-1 duration-300"
+            className="h-12 hover:scale-110 hover:-translate-y-1 duration-300"
           ></img>
         </motion.div>
         <motion.div
@@ -89,22 +89,22 @@ const TechStack = () => {
           <img
             src={python}
             alt="python"
-            className="h-10 hover:scale-110 hover:-translate-y-1 duration-300"
+            className="h-12 hover:scale-110 hover:-translate-y-1 duration-300"
           ></img>
           <img
             src={flask}
             alt="flask"
-            className="h-10 hover:scale-110 hover:-translate-y-1 duration-300"
+            className="h-12 hover:scale-110 hover:-translate-y-1 duration-300"
           ></img>
           <img
             src={node}
             alt="node"
-            className="h-10 hover:scale-110 hover:-translate-y-1 duration-300"
+            className="h-12 hover:scale-110 hover:-translate-y-1 duration-300"
           ></img>
           <img
             src={express}
             alt="express"
-            className="h-10 hover:scale-110 hover:-translate-y-1 duration-300"
+            className="h-12 hover:scale-110 hover:-translate-y-1 duration-300"
           ></img>
         </motion.div>
         <motion.div
@@ -117,12 +117,12 @@ const TechStack = () => {
           <img
             src={postgresql}
             alt="Postgresql Icon by Icon Mafia"
-            className="h-10 hover:scale-110 hover:-translate-y-1 duration-300"
+            className="h-12 hover:scale-110 hover:-translate-y-1 duration-300"
           ></img>
           <img
             src={mongodb}
             alt="mongodb"
-            className="h-10 hover:scale-110 hover:-translate-y-1 duration-300"
+            className="h-12 hover:scale-110 hover:-translate-y-1 duration-300"
           ></img>
         </motion.div>
         <motion.div
@@ -135,22 +135,22 @@ const TechStack = () => {
           <img
             src={git}
             alt="git"
-            className="h-10 hover:scale-110 hover:-translate-y-1 duration-300"
+            className="h-12 hover:scale-110 hover:-translate-y-1 duration-300"
           ></img>
           <img
             src={github}
             alt="github"
-            className="h-10 hover:scale-110 hover:-translate-y-1 duration-300"
+            className="h-12 hover:scale-110 hover:-translate-y-1 duration-300"
           ></img>
           <img
             src={netlify}
             alt="netlify"
-            className="h-10 hover:scale-110 hover:-translate-y-1 duration-300"
+            className="h-12 hover:scale-110 hover:-translate-y-1 duration-300"
           ></img>
           <img
             src={vscode}
             alt="vscode"
-            className="h-10 hover:scale-110 hover:-translate-y-1 duration-300"
+            className="h-12 hover:scale-110 hover:-translate-y-1 duration-300"
           ></img>
         </motion.div>
       </section>

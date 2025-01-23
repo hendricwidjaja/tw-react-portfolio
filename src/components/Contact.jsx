@@ -4,7 +4,7 @@ import handshake from "../assets/heading-icons/work-together-icon.svg";
 
 const Contact = () => {
   return (
-    <div className="mt-10 flex flex-col items-center pb-4">
+    <div className="mt-10 flex flex-col items-center px-12 pb-4">
       <motion.div
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}

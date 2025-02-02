@@ -12,6 +12,11 @@ const Navbar = () => {
         <div className="bg-red-600 text-center text-white py-2">
           <h2>🛠️ This website is under construction 👷</h2>
         </div>
+        <div className="bg-amber-400 text-center text-black py-2">
+          <a href="https://hendric-widjaja.netlify.app/">
+            Click Here to check out my original portfolio using HTML & CSS 👈
+          </a>
+        </div>
         <nav className="flex items-center justify-between max-w-screen-xl mx-auto px-6 py-4">
           {/* Logo */}
           <button
@@ -19,8 +24,7 @@ const Navbar = () => {
               window.scrollTo({ top: 0, behavior: "smooth" }); // Scrolls to the top smoothly
               window.history.pushState(null, "", "/#home"); // Updates the URL hash
               setOpen(false); // Close menu after clicking (if applicable)
-              }
-            }
+            }}
             className="font-lacquer cursor-pointer mr-8 text-5xl hover:drop-shadow-custom-hov hover:scale-125 hover:rotate-6 duration-100"
           >
             :)
@@ -33,7 +37,7 @@ const Navbar = () => {
                   onClick={() => {
                     const section = document.getElementById(link);
                     if (section) {
-                      const offset = 120; // to offset height of navbar
+                      const offset = 170; // to offset height of navbar
                       const sectionPosition =
                         section.getBoundingClientRect().top +
                         window.scrollY -

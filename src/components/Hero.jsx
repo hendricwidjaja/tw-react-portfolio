@@ -17,7 +17,7 @@ const container = (delay) => ({
 
 const Hero = () => {
   return (
-    <div id="home" className="sm:pt-44 pt-28 flex flex-col items-center pb-4 border-b border-slate-200">
+    <div id="home" className="sm:pt-56 pt-40 flex flex-col items-center pb-4 border-b border-slate-200">
       <div className="flex justify-center">
         <motion.img
           variants={container(0.4)}

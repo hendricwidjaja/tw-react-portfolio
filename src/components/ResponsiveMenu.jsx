@@ -23,7 +23,7 @@ const ResponsiveMenu = ({ open, setOpen }) => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -100 }}
           transition={{ duration: 0.3 }}
-          className="sm:hidden absolute top-28 left-0 w-full h-screen z-20"
+          className="sm:hidden absolute top-48 left-0 w-full h-screen z-20"
         >
           {/* Backdrop */}
           <div
@@ -40,7 +40,7 @@ const ResponsiveMenu = ({ open, setOpen }) => {
                       onClick={() => {
                         const section = document.getElementById(link);
                         if (section) {
-                          const offset = 120; // Adjust based on your navbar height
+                          const offset = 160; // Adjust based on your navbar height
                           const sectionPosition = section.getBoundingClientRect().top + window.scrollY - offset;
                           window.scrollTo({ top: sectionPosition, behavior: "smooth" });
                           window.history.pushState(null, "", `/#${link}`); // Update URL hash

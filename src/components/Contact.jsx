@@ -11,7 +11,7 @@ const Contact = () => {
         transition={{ duration: 0.5 }}
         className="flex flex-wrap gap-4 justify-center items-center"
       >
-        <div className="flex flex-wrap gap-3 justify-center">
+        <div className="flex flex-wrap font-bold gap-3 justify-center">
           <h1 className="font-lacquer text-4xl">let's</h1>
           <h1 className="font-lacquer text-4xl">work</h1>
           <h1 className="font-lacquer text-4xl">together</h1>

@@ -40,7 +40,7 @@ const ResponsiveMenu = ({ open, setOpen }) => {
                       onClick={() => {
                         const section = document.getElementById(link);
                         if (section) {
-                          const offset = 130; // Adjust based on your navbar height
+                          const offset = 120; // Adjust based on your navbar height
                           const sectionPosition = section.getBoundingClientRect().top + window.scrollY - offset;
                           window.scrollTo({ top: sectionPosition, behavior: "smooth" });
                           window.history.pushState(null, "", `/#${link}`); // Update URL hash

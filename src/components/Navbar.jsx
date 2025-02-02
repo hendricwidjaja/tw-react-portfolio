@@ -14,12 +14,17 @@ const Navbar = () => {
         </div>
         <nav className="flex items-center justify-between max-w-screen-xl mx-auto px-6 py-4">
           {/* Logo */}
-          <a
-            href="/#home"
+          <button
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" }); // Scrolls to the top smoothly
+              window.history.pushState(null, "", "/#home"); // Updates the URL hash
+              setOpen(false); // Close menu after clicking (if applicable)
+              }
+            }
             className="font-lacquer cursor-pointer mr-8 text-5xl hover:drop-shadow-custom-hov hover:scale-125 hover:rotate-6 duration-100"
           >
             :)
-          </a>
+          </button>
           {/* Menu sections */}
           <ul className="flex items-center gap-8 hidden sm:inline-flex">
             {Navlinks.map(({ id, name, link }) => (
@@ -28,9 +33,15 @@ const Navbar = () => {
                   onClick={() => {
                     const section = document.getElementById(link);
                     if (section) {
-                      const offset = 130; // Adjust based on your navbar height
-                      const sectionPosition = section.getBoundingClientRect().top + window.scrollY - offset;
-                      window.scrollTo({ top: sectionPosition, behavior: "smooth" });
+                      const offset = 120; // to offset height of navbar
+                      const sectionPosition =
+                        section.getBoundingClientRect().top +
+                        window.scrollY -
+                        offset;
+                      window.scrollTo({
+                        top: sectionPosition,
+                        behavior: "smooth",
+                      });
                       window.history.pushState(null, "", `/#${link}`); // Update URL hash
                       setOpen(false); // Close menu after clicking
                     }

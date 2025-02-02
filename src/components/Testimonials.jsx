@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Testimonials = () => {
   return (
-    <div className="flex-col justify-center pt-6 pb-16 border-b">
+    <div id="about" className="flex-col justify-center pt-6 pb-16 border-b">
       <motion.section
         whileInView={{ opacity: 1, x: 0 }}
         initial={{ opacity: 0, x: -100 }}

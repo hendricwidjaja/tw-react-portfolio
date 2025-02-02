@@ -3,7 +3,6 @@ import { Navlinks } from "../constants";
 import React, { useEffect } from "react";
 
 const ResponsiveMenu = ({ open, setOpen }) => {
-
   // Close menu on resize above 640px
   useEffect(() => {
     const handleResize = () => {
@@ -36,13 +35,21 @@ const ResponsiveMenu = ({ open, setOpen }) => {
               {Navlinks.map(({ id, name, link }) => {
                 return (
                   <li key={id} className="py-4">
-                    <a
-                      href={link}
+                    <button
                       className="font-lacquer inline-block text-lg hover:scale-110 duration-150"
-                      onClick={() => setOpen(false)}
+                      onClick={() => {
+                        const section = document.getElementById(link);
+                        if (section) {
+                          const offset = 130; // Adjust based on your navbar height
+                          const sectionPosition = section.getBoundingClientRect().top + window.scrollY - offset;
+                          window.scrollTo({ top: sectionPosition, behavior: "smooth" });
+                          window.history.pushState(null, "", `/#${link}`); // Update URL hash
+                          setOpen(false); // Close menu after clicking
+                        }
+                      }}
                     >
                       {name}
-                    </a>
+                    </button>
                   </li>
                 );
               })}

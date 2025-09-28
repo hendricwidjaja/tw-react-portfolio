@@ -12,6 +12,7 @@ const Navbar = () => {
         <div className="bg-red-600 text-center text-white py-2">
           <h2>🛠️ This website is under construction 👷</h2>
         </div>
+        {/* Original Portfolio Notification */}
         <div className="bg-amber-400 text-center text-black py-2">
           <a href="https://hendric-widjaja.netlify.app/">
             Click Here to check out my original portfolio using HTML & CSS 👈

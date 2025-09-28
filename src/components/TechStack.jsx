@@ -29,7 +29,7 @@ const container = (delay) => ({
 
 const TechStack = () => {
   return (
-    <div className="flex flex-col md:flex-row md:gap-10 justify-center items-center mx-auto px-4 gap-6 pb-16 border-b">
+    <div id="projects" className="flex flex-col md:flex-row md:gap-10 justify-center items-center mx-auto px-4 gap-6 pb-16 border-b">
       <motion.div
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -25 }}

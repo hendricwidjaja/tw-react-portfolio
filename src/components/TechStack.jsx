@@ -7,12 +7,14 @@ import css from "../assets/tech-stack/css-icon.webp";
 import html from "../assets/tech-stack/html-icon.webp";
 import js from "../assets/tech-stack/js-icon.webp";
 import react from "../assets/tech-stack/react-icon.webp";
+import nextjs from "../assets/tech-stack/nextjs-logo.png";
 import python from "../assets/tech-stack/python-icon.webp";
 import flask from "../assets/tech-stack/flask-icon.svg";
 import node from "../assets/tech-stack/node-js-icon.webp";
 import express from "../assets/tech-stack/express-icon.svg";
 import postgresql from "../assets/tech-stack/postgresql.svg";
 import mongodb from "../assets/tech-stack/mongodb-icon.webp";
+import strapi from "../assets/tech-stack/strapi-logo.png";
 import git from "../assets/tech-stack/git-red-icon.webp";
 import github from "../assets/tech-stack/github.svg";
 import netlify from "../assets/tech-stack/netlify-icon.png";
@@ -29,7 +31,10 @@ const container = (delay) => ({
 
 const TechStack = () => {
   return (
-    <div id="projects" className="flex flex-col md:flex-row md:gap-10 justify-center items-center mx-auto px-4 gap-6 pb-16 border-b">
+    <div
+      id="projects"
+      className="flex flex-col md:flex-row md:gap-10 justify-center items-center mx-auto px-4 gap-6 pb-16 border-b"
+    >
       <motion.div
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -25 }}
@@ -50,7 +55,10 @@ const TechStack = () => {
           <h3>I use on a weekly basis</h3>
         </div>
       </motion.div>
-      <section id="tech-stack-grid" className="flex-col md:pt-16 w-[90dvw] max-w-lg">
+      <section
+        id="tech-stack-grid"
+        className="flex-col md:pt-16 w-[90dvw] max-w-lg"
+      >
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
@@ -115,6 +123,11 @@ const TechStack = () => {
           className="flex gap-4 sm:gap-8 justify-center bg-white border-black border-2 rounded-2xl mb-4 py-2 px-4 drop-shadow-custom"
         >
           <img
+            src={nextjs}
+            alt="nextjs"
+            className="h-12 hover:scale-110 hover:-translate-y-1 duration-300"
+          ></img>
+          <img
             src={postgresql}
             alt="Postgresql Icon by Icon Mafia"
             className="h-12 hover:scale-110 hover:-translate-y-1 duration-300"
@@ -122,6 +135,11 @@ const TechStack = () => {
           <img
             src={mongodb}
             alt="mongodb"
+            className="h-12 hover:scale-110 hover:-translate-y-1 duration-300"
+          ></img>
+          <img
+            src={strapi}
+            alt="strapi"
             className="h-12 hover:scale-110 hover:-translate-y-1 duration-300"
           ></img>
         </motion.div>

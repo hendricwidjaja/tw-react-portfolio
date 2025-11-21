@@ -1,7 +1,7 @@
 import React from "react";
 import { HERO_CONTENT } from "../constants";
 import profile from "../assets/profile-picture2.jpg";
-import cv from "../assets/HendricWidjaja_CSS_CV.pdf";
+import cv from "../assets/Hendric_Widjaja_CV.pdf";
 import { motion } from "framer-motion";
 
 import { FaLinkedinIn } from "react-icons/fa6";
